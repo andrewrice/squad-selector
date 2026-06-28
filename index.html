@@ -17,20 +17,6 @@ h2{font-size:17px;color:var(--ink);font-weight:700;margin:0 0 15px;letter-spacin
 .hlink:hover{text-decoration:underline}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:900px){.grid2{grid-template-columns:1fr}.shell{padding:18px}}
-@media(max-width:760px){.hero{flex-direction:column;align-items:stretch;padding:24px}.capbadge{min-width:0}.toggles{flex-wrap:wrap}}
-@media(max-width:560px){
- html,body{overflow-x:hidden}
- .shell{padding:13px}
- .hero{padding:20px;border-radius:18px}.hero h1{font-size:26px}.sub{font-size:14px}
- .meta{gap:13px}.meta b{font-size:15px}
- .card{padding:16px;border-radius:16px;margin-bottom:16px}
- h2{font-size:16px}.ghdr{font-size:18px;margin:26px 2px 14px}
- .kv{font-size:24px}.bigval{font-size:25px}.capbadge .nm{font-size:25px}
- .pc{width:66px}.pc-ph,.pc-img{width:46px;height:46px}.prow{gap:9px}
- .pc-n{font-size:11px}.pc-o{font-size:9px}.benchrow{gap:10px}
- .seg-toggle button{padding:6px 9px;font-size:11px}
- .evc-n,.dec-n{width:120px}.snow1{grid-template-columns:1fr}
-}
 .num{font-variant-numeric:tabular-nums}
 .muted{color:var(--mut)}
 /* hero */
@@ -313,12 +299,28 @@ tbody tr:hover{background:rgba(56,189,248,0.05)}
 .rfx-p{font-size:11px;color:var(--mut);line-height:1.4}
 .rfx.scout .rfx-t{color:var(--cyan)}.rfx.chalk .rfx-t{color:#fff}
 .rfx.warn{border-color:rgba(250,204,21,.3)}.rfx.warn .rfx-t{color:var(--amber)}.rfx.info .rfx-t{color:var(--mut)}
+/* ===== mobile overrides (kept last so they win on equal specificity) ===== */
+@media(max-width:760px){.hero{flex-direction:column;align-items:stretch;padding:24px}.capbadge{min-width:0}.toggles{flex-wrap:wrap}}
+@media(max-width:560px){
+ html,body{overflow-x:hidden}
+ .shell{padding:13px}
+ .hero{padding:20px;border-radius:18px}.hero h1{font-size:26px}.sub{font-size:14px}
+ .meta{gap:12px 16px}.meta b{font-size:15px}
+ .card{padding:16px;border-radius:16px;margin-bottom:16px}
+ h2{font-size:16px}.ghdr{font-size:18px;margin:26px 2px 14px}
+ .kv{font-size:24px}.bigval{font-size:25px}.capbadge .nm{font-size:25px}
+ .pc{width:64px}.pc-ph,.pc-img{width:46px;height:46px}.prow{gap:9px}
+ .pc-n{font-size:11px}.pc-o{font-size:9px}.benchrow{gap:10px}
+ .seg-toggle button{padding:6px 9px;font-size:11px}
+ .evc-n,.dec-n{width:118px}.snow1{grid-template-columns:1fr}
+ .mw-head{gap:20px}
+}
 </style></head><body><nav class="toc"><div class="toc-h">Contents</div><a href="#g-overview" data-toc="g-overview">Overview</a><a href="#g-season" data-toc="g-season">Season &amp; rank</a><a href="#g-live" data-toc="g-live">Matchweek</a><a href="#g-squad" data-toc="g-squad">Squad &amp; lineup</a><a href="#g-decision" data-toc="g-decision">Overrides &amp; captaincy</a><a href="#g-analytics" data-toc="g-analytics">Player analytics</a><a href="#g-risk" data-toc="g-risk">Risk &amp; variance</a><a href="#g-history" data-toc="g-history">History &amp; budget</a><a href="#g-boosters" data-toc="g-boosters">Reliance &amp; boosters</a><a href="#g-path" data-toc="g-path">Fixtures &amp; path</a><a href="#g-reference" data-toc="g-reference">Reference</a></nav><main class=shell><section class=hero id=g-overview><div class=L>
 <div class=kicker>WC2026 Round of 32 · <a class=hlink href="https://play.fifa.com/fantasy/public-team/1417228/4" target="_blank" rel="noopener">Migratedfish</a></div>
 <h1>Squad Selection Report</h1>
 <div class=sub>Optimizer output, ownership leverage, fixture inputs, and human judgment overrides for the Round of 32.</div>
 <div class=meta>
-<div>Updated<b>Jun 28, 4:46 PM ET</b></div><div>Round<b>Ro32</b></div><div>Pool<b>45</b></div>
+<div>Updated<b>Jun 28, 4:51 PM ET</b></div><div>Round<b>Ro32</b></div><div>Pool<b>45</b></div>
 <div>Budget<b>$105m</b></div><div>Saved EV<b class=num>200.1</b></div>
 <div>Optimizer EV<b class=num>200.5</b></div><div>Judgment EV<b class=num>200.1</b></div></div></div>
 <div class=capbadge><img class=cap-img data-pid="500" src="https://play.fifa.com/media/image/headshots/389867_headshot.png" alt="" referrerpolicy="no-referrer" onerror="this.style.display='none'">
