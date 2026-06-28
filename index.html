@@ -17,6 +17,20 @@ h2{font-size:17px;color:var(--ink);font-weight:700;margin:0 0 15px;letter-spacin
 .hlink:hover{text-decoration:underline}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:900px){.grid2{grid-template-columns:1fr}.shell{padding:18px}}
+@media(max-width:760px){.hero{flex-direction:column;align-items:stretch;padding:24px}.capbadge{min-width:0}.toggles{flex-wrap:wrap}}
+@media(max-width:560px){
+ html,body{overflow-x:hidden}
+ .shell{padding:13px}
+ .hero{padding:20px;border-radius:18px}.hero h1{font-size:26px}.sub{font-size:14px}
+ .meta{gap:13px}.meta b{font-size:15px}
+ .card{padding:16px;border-radius:16px;margin-bottom:16px}
+ h2{font-size:16px}.ghdr{font-size:18px;margin:26px 2px 14px}
+ .kv{font-size:24px}.bigval{font-size:25px}.capbadge .nm{font-size:25px}
+ .pc{width:66px}.pc-ph,.pc-img{width:46px;height:46px}.prow{gap:9px}
+ .pc-n{font-size:11px}.pc-o{font-size:9px}.benchrow{gap:10px}
+ .seg-toggle button{padding:6px 9px;font-size:11px}
+ .evc-n,.dec-n{width:120px}.snow1{grid-template-columns:1fr}
+}
 .num{font-variant-numeric:tabular-nums}
 .muted{color:var(--mut)}
 /* hero */
@@ -304,7 +318,7 @@ tbody tr:hover{background:rgba(56,189,248,0.05)}
 <h1>Squad Selection Report</h1>
 <div class=sub>Optimizer output, ownership leverage, fixture inputs, and human judgment overrides for the Round of 32.</div>
 <div class=meta>
-<div>Updated<b>Jun 28, 4:35 PM ET</b></div><div>Round<b>Ro32</b></div><div>Pool<b>45</b></div>
+<div>Updated<b>Jun 28, 4:46 PM ET</b></div><div>Round<b>Ro32</b></div><div>Pool<b>45</b></div>
 <div>Budget<b>$105m</b></div><div>Saved EV<b class=num>200.1</b></div>
 <div>Optimizer EV<b class=num>200.5</b></div><div>Judgment EV<b class=num>200.1</b></div></div></div>
 <div class=capbadge><img class=cap-img data-pid="500" src="https://play.fifa.com/media/image/headshots/389867_headshot.png" alt="" referrerpolicy="no-referrer" onerror="this.style.display='none'">
